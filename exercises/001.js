@@ -23,5 +23,7 @@ function transformFirstAndLast(array) {
 */
 
 function transformFirstAndLast(array) {
-  //your code here
+  var newObj = {};
+  newObj[array[0]] = array[array.length - 1];
+  return newObj;
 }
