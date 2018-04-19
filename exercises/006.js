@@ -23,4 +23,9 @@ Starter Code:
 
 function convertObjectToList(obj) {
   // your code here
+  var arrOfArr = [];
+  for (var x in obj) {
+    arrOfArr.push([x,obj[x]]);
+  }
+  return arrOfArr;
 }
