@@ -11,7 +11,7 @@ Example input:
 Function's return value (output):
 ['Krysten', 33, false]
 
-Note that the input may have a different number of keys and values than the given sample. 
+Note that the input may have a different number of keys and values than the given sample.
 
 E.g. it should also handle an input like:
 {
@@ -29,5 +29,9 @@ Starter Code
 
 function listAllValues(obj) {
   // your code here
-
+  var valueArray = [];
+  for (var item in obj){
+    valueArray.push(obj[item]);
+  }
+  return valueArray;
 }
