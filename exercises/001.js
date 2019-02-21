@@ -3,7 +3,7 @@ Write a function 'transformFirstAndLast' that takes in an array, and returns an 
 1) the first element of the array as the object's key, and
 2) the last element of the array as that key's value.
 Example input:
-['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce']
+array = ['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce']
 Function's return value (output):
 {
   Queen : 'Beyonce'
@@ -21,7 +21,12 @@ function transformFirstAndLast(array) {
   // your code here
 }
 */
+// const arr = ['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce']
 
 function transformFirstAndLast(array) {
-  //your code here
+  let obj = {};
+  obj[array[0]] = array[array.length - 1];
+  return obj;
 }
+// console.log(transformFirstAndLast(arr))
+// console.log(arr);

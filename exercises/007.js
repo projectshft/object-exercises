@@ -33,24 +33,26 @@ Starter Code :
 */
 
 var customerData = {
-  'Joe': {
-    visits: 1
-  },
-  'Carol': {
-    visits: 2
-  },
-  'Howard': {
-    visits: 3
-  },
-  'Carrie': {
-    visits: 4
-  }
+  'Joe': {visits: 1},
+  'Carol': {visits: 2},
+  'Howard': {visits: 3},
+  'Carrie': {visits: 4}
 };
+// console.log(customerData['Joe'].visits);
 
 function greetCustomer(firstName) {
-  var greeting = '';
-  // your code here
+  let greeting = '';
+  for(name in customerData){
+    if(name === firstName){
+      if(customerData[name].visits === 1){        
+        greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`;
+      } else {
+        greeting = `Welcome back, ${firstName}! So glad to see you again!`;        
+      } 
+      return greeting;
+    } 
+  }
+  return greeting = `Welcome! Is this your first time?`;
+}  
 
-  return greeting;
-}
-
+// console.log(greetCustomer(""));

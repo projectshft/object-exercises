@@ -25,6 +25,14 @@ function getAllKeys(obj) {
 }
 */
 
+// const object = {key1: 'value1', key2: 'value2'};
+
 function getAllKeys(obj){
-  // your code here
+  const arr = [];
+  for(let key in obj) {
+    arr.push(key.toString());
+  }
+  return arr;
 }
+
+// console.log(getAllKeys(object));

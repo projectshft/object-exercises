@@ -27,7 +27,19 @@ Function's return value (output):
 Starter Code
 */
 
-function listAllValues(obj) {
-  // your code here
+// const object = {
+//   a : 'a',
+//   number : 11,
+//   hungry : true,
+//   grammyWins : 1
+// }
 
+function listAllValues(obj) {
+  const arr = [];
+  for(key in obj) {
+    arr.push(obj[key]);
+  }
+  return arr;
 }
+
+// console.log(listAllValues(object));
