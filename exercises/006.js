@@ -21,6 +21,36 @@ E.g., it should also be able to handle this, or any other object containing simp
 Starter Code:
 */
 
+// const input = {
+//   name: 'Holly',
+//   age: 35,
+//   role: 'producer',
+//   extra: 'Uh Oh'
+// }
+
 function convertObjectToList(obj) {
-  // your code here
+  const output = [];  
+  for(let i = 0; i < getAllKeys(obj).length; i++){
+    output[i] = [getAllKeys(obj)[i], listAllValues(obj)[i]];
+  }
+  return output;
 }
+// From previous exercises
+
+function listAllValues(obj) {
+  const arr = [];
+  for(key in obj) {
+    arr.push(obj[key]);
+  }
+  return arr;
+}
+
+function getAllKeys(obj){
+  const arr = [];
+  for(let key in obj) {
+    arr.push(key.toString());
+  }
+  return arr;
+}
+
+// console.log(convertObjectToList(input));

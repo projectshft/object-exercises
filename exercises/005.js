@@ -24,7 +24,37 @@ For example, let's say the HR department adds a "tshirtSize" field to each emplo
 Starter Code :
 */
 
-function transformEmployeeData(array) {
-  // your code here
+// const input = [
+//     [
+//       ['firstName', 'Joe'], ['lastName', 'Blow'], ['age', 42], ['role', 'clerk']
+//     ],
+//     [
+//       ['firstName', 'Mary'], ['lastName', 'Jenkins'], ['age', 36], ['role', 'manager']
+//     ],
+//     [
+//       ['firstName', 'Extra'], ['lastName', 'Spicy'], ['age', 234], ['role', 'hard code spoiler']
+//     ]
+//   ];
 
+function transformEmployeeData(array) {
+    const output = [];
+    array.forEach(el => {
+        output.push(fromListToObject(el));
+    })
+    return output;
 }
+
+// From previous exercise
+
+function fromListToObject(array) {
+    const obj = {};
+    array.forEach(element => {
+        obj[element[0]] = element[1];
+    })
+    return obj;
+}
+
+// const output = transformEmployeeData(input);
+// console.log(output);
+
+

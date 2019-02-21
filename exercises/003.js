@@ -19,7 +19,14 @@ For instance, if the input had 6 values instead of 4, your code should flexibly 
 Starter Code:
 */
 
-function fromListToObject(array) {
-  // your code here
+// const arr = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
 
+function fromListToObject(array) {
+  const obj = {};
+  array.forEach(element => {
+    obj[element[0]] = element[1];
+  }) 
+  return obj; 
 }
+
+// console.log(fromListToObject(arr));
