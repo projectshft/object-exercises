@@ -24,7 +24,6 @@ Notes:
 * Your function should not alter the customerData object to update the number of visits.
 * Do not hardcode to the exact sample data. This is a BAD IDEA:
 
-
 if (firstName === 'Joe') {
   // do something
 }
@@ -49,14 +48,7 @@ var customerData = {
 
 function greetCustomer(firstName) {
   var greeting = '';
-
-  if (customerData.hasOwnProperty(firstName) && customerData[firstName]['visits'] === 1) {
-    greeting = `Welcome back, ${firstName}! We're glad you liked us the first time!`;
-  } else if (customerData.hasOwnProperty(firstName) && customerData[firstName]['visits'] > 1) {
-    greeting = `Welcome back, ${firstName}! So glad to see you again!`;
-  } else {
-    greeting = 'Welcome! Is this your first time?';
-  }
+  //your code here
   
   return greeting;
 }
