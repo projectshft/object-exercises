@@ -26,5 +26,9 @@ function getAllKeys(obj) {
 */
 
 function getAllKeys(obj){
-  // your code here
+  var returnArr = [];
+
+  for (var property in obj) { returnArr.push(property) };
+
+  return returnArr;
 }
