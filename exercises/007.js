@@ -24,7 +24,6 @@ Notes:
 * Your function should not alter the customerData object to update the number of visits.
 * Do not hardcode to the exact sample data. This is a BAD IDEA:
 
-
 if (firstName === 'Joe') {
   // do something
 }
@@ -49,8 +48,7 @@ var customerData = {
 
 function greetCustomer(firstName) {
   var greeting = '';
-  // your code here
-
+  //your code here
+  
   return greeting;
 }
-

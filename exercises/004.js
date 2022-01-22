@@ -11,6 +11,7 @@ Example input:
 Function's return value (output):
 ['Krysten', 33, false]
 
+Do not use "Object.values" to solve this prompt.
 Note that the input may have a different number of keys and values than the given sample. 
 
 E.g. it should also handle an input like:
@@ -28,6 +29,6 @@ Starter Code
 */
 
 function listAllValues(obj) {
-  // your code here
-
+  //your code here
+  
 }
